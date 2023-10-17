@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;900&family=Skranji:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&family=Mukta+Malar:wght@200&family=Oi&family=Tiro+Tamil&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+.main-logo-text {
+  height: 90vh;
+  width: 100vw;
+}
+
+.mtv-logo {
+  width: 50vw;
+  opacity: 0;
+  animation: fadeIn 1s 1s forwards;
+  /* Use CSS animation with 1s duration and a 1s delay */
+}
+
+.mtv-logo-text {
+  width: 80vw;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s forwards;
+  /* Use CSS animation with 1s duration and a 2s delay */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 86% 0%;
+  }
+
+  50% {
+    background-position: 15% 100%;
+  }
+
+  100% {
+    background-position: 86% 0%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 86% 0%;
+  }
+
+  50% {
+    background-position: 15% 100%;
+  }
+
+  100% {
+    background-position: 86% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 86% 0%;
+  }
+
+  50% {
+    background-position: 15% 100%;
+  }
+
+  100% {
+    background-position: 86% 0%;
+  }
+}
+
+.main-card-content {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 80vw;
+}
+
+.card-title {
+  text-align: center;
+  color: #fab002;
+  font-weight: bold;
+  padding-bottom: 15px;
+  text-decoration: underline;
+}
+
+.card-text-content {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: "Noto Sans Tamil";
+}
+
+.text-container,
+.text-container-more-black {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 70px;
+  margin: 30px;
+}
+
+.text-container-more-black {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-heading {
+  font-family: "Noto Sans Tamil";
+  font-size: 6vw;
+  font-weight: bold;
+  color: rgba(225, 225, 225, 0.01);
+  background-image: url("https://t3.ftcdn.net/jpg/03/09/33/56/360_F_309335627_FTR5JCSn2zvA6OFe5pJrC2ClpO4xyYr3.jpg");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  animation: animate 10s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px !important;
+}
+
+.date-max-container {
+  margin: 40px;
+  background: white;
+  border-radius: 20px;
+  border: 3px solid #e63946;
+  box-shadow: -1px 1px 195px 28px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: -1px 1px 195px 28px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: -1px 1px 195px 28px rgba(0, 0, 0, 0.71);
+}
+
+.calender-icon {
+  margin-top: 8px;
+  margin-left: 30px;
+  height: 50px;
+}
+
+.calender-datetime {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.calender-datetime-lap {
+  padding-left: 30px;
+  margin-top: 15px;
+}
+
+.calender-datetime-heading {
+  font-size: 12px;
+  text-align: left;
+  color: #e63946;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.calender-datetime-heading-lap {
+  font-size: 15px;
+  text-align: left;
+  color: #e63946;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.mtv-poster {
+  width: 75vw;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: transparent;
+  font-weight: light;
+  font-family: "Kavivanar";
+  /* Use a font that supports Tamil characters */
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.card-text > span {
+  display: inline-block;
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.padding-temp {
+  right: 7%;
+}
+
+.padding-temp2 {
+  left: 10%;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-position: left top;
+  }
+
+  25% {
+    background-position: right bottom;
+  }
+
+  50% {
+    background-position: left bottom;
+  }
+
+  75% {
+    background-position: right top;
+  }
+}
+
+.map-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.card-text {
+  font-size: 17px;
+  color: white;
+  font-weight: light;
+  font-family: "Kavivanar";
+  /* Use a font that supports Tamil characters */
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  animation: glow-fade 4s infinite;
+  /* Adjust the total duration as needed */
+}
+
+@keyframes glow-fade {
+  0%,
+  100% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+      0 0 20px rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+  }
+
+  50% {
+    text-shadow: none;
+    opacity: 0.7;
+  }
+}
+
+.card-text-location {
+  font-size: 14px;
+  color: #212121;
+  font-weight: light;
+  font-family: "Roboto";
+}
+
+.line-break {
+  height: 1px;
+  width: 60vw;
+  text-align: center;
+  background-color: #969696;
+  margin-bottom: 20px;
+}
+
+.card-text-location {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  background-color: black;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -999;
+}
+
+.links {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a img.icon {
+  display: inline-block;
+  height: 1em;
+  margin: 0 0 0.1em 0.3em;
+}
+
+.map-content {
+  border-radius: 15px;
+  border: none;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.group-events-button {
+  padding: 20px;
+  padding-top: 10px;
+  height: 45px;
+  border: 2px solid #c7c7c7;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 400px 47px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 400px 47px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 400px 47px rgba(0, 0, 0, 1);
+}
+
+.top-image-styling {
+  width: 100vw;
+}
+
+.group-events-button:hover {
+  padding: 20px;
+  padding-top: 10px;
+  height: 45px;
+  border: 2px solid #c7c7c7;
+  background-color: rgba(255, 255, 255, 0.325);
+  color: white;
+  font-size: 15px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 400px 47px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 400px 47px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 400px 47px rgba(0, 0, 0, 1);
+}
+
+.follow-us-section {
+  margin-top: 30px;
+  width: 100vw;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.follow-us-main-heading {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Kavivanar";
+}
+
+.follow-us-links {
+  color: white;
+  padding-top: 2px;
+}
+
+.video-play {
+  width: 75vw;
+  border-radius: 15px;
+}
+
+.follow-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.solo-events-heading {
+  color: white;
+}
+
+.back-fixed-button {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 35px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+}
+
+@media (max-width: 430px) {
+  .back-fixed-button {
+    border-top-right-radius: 15px;
+    font-size: 14px;
+    padding: 11px;
+  }
+}
+
+.logo-text-end {
+  color: black;
+  font-size: 17px;
+}
+
+.logo-text-end-mobile {
+  color: black;
+  font-size: 12px;
+}
+
+.logo-images-end-mobile {
+  height: 15px;
+  padding-top: 2px;
+}
+
+.logo-images-end {
+  height: 25px;
+  padding-top: 2px;
+}
+
+.end-align-container {
+  background-color: white;
+  width: 100vw;
+  padding-top: 10px;
+}
+
+.align-logo {
+  padding-left: -30px;
+}
+
+.rules-container {
+  width: 80vw;
+}
+
+.bulletin-rules {
+  list-style-type: disc;
+}
+
+.card-text-rules {
+  font-size: 17px;
+  color: white;
+  font-family: "Kavivanar";
+  /* Use a font that supports Tamil characters */
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  animation: glow-fade 4s infinite;
+}
+
+.back-fixed-button {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 35px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+}
+
+.up-arrow {
+  background: transparent;
+  text-align: center;
+  font-size: 40px;
+  font-family: Calibri, arial, sans-serif;
+}
+
+.to-top {
+  color: white;
+  padding-top: 1.8em;
+  display: inline-block;
+  /* or block */
+  position: relative;
+  border-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-left: 0px;
+}
+
+.to-top:before {
+  content: "▲";
+  font-size: 1.1em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
+  border-radius: 10em;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+
+.to-top:hover {
+  color: pink;
+  border-color: pink;
+}
+
+.to-top:hover:before {
+  transform: rotate(360deg);
+}

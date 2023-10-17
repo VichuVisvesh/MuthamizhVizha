@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="MuthamizhVizha.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/dspcvaoev/image/upload/v1697459240/kmmhhz5sxr11pjfdtdwc.png"
+    />
+    <title>முத்தமிழ் விழா</title>
+  </head>
+
+  <body>
+    <!--HEADER START-->
+
+    <!--HEADER END-->
+
+    <!-- 
+- Single file SVG animation
+- * can be used as CSS backgroud
+- * total size is less than 2kb!
+-->
+
+    <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+      <defs>
+        <style>
+          @keyframes rotate {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
+          .out-top {
+            animation: rotate 20s linear infinite;
+            transform-origin: 13px 25px;
+          }
+
+          .in-top {
+            animation: rotate 10s linear infinite;
+            transform-origin: 13px 25px;
+          }
+
+          .out-bottom {
+            animation: rotate 25s linear infinite;
+            transform-origin: 84px 93px;
+          }
+
+          .in-bottom {
+            animation: rotate 15s linear infinite;
+            transform-origin: 84px 93px;
+          }
+        </style>
+      </defs>
+      <path
+        fill="#9b5de5"
+        class="out-top"
+        d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"
+      />
+      <path
+        fill="#790091"
+        class="in-top"
+        d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"
+      />
+      <path
+        fill="#00bbf9"
+        class="out-bottom"
+        d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"
+      />
+      <path
+        fill="#00f5d4"
+        class="in-bottom"
+        d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"
+      />
+    </svg>
+
+    <div class="d-flex flex=row justify-content-center">
+      <div class="top-image d-none d-sm-block mb-4">
+        <img
+          class="top-image-styling"
+          src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697135083/%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D_%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D_%E0%AE%A8%E0%AF%81%E0%AE%A3%E0%AF%8D%E0%AE%95%E0%AE%B2%E0%AF%88_%E0%AE%AE%E0%AE%A9%E0%AF%8D%E0%AE%B1%E0%AE%AE%E0%AF%8D_mtv_png_jiekh6.png"
+        />
+      </div>
+    </div>
+
+    <div class="d-flex flex=row justify-content-center">
+      <div class="top-image d-block d-sm-none mb-4">
+        <img
+          class="top-image-styling"
+          src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697138577/mtv_top_phone_kput2v.png"
+        />
+      </div>
+    </div>
+
+    <div id="sectionMainPage">
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <div class="d-flex flex=row justify-content-center">
+              <img
+                class="mtv-logo logo"
+                src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697459240/kmmhhz5sxr11pjfdtdwc.png"
+              />
+            </div>
+            <div class="d-flex flex=row justify-content-center">
+              <img
+                class="mtv-logo-text logo"
+                src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697459679/bbvznu07rpugcimpl8eu.png "
+              />
+            </div>
+          </div>
+
+          <div class="d-flex flex-row justify-content-center">
+            <div class="main-card">
+              <div class="card-body">
+                <div class="main-card-content">
+                  <div
+                    class="main-card-title d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="text-container">
+                      <h1 class="main-heading pr-2">முத்தமிழ்</h1>
+                      <h2 class="main-heading">விழா</h2>
+                    </div>
+
+                    <div class="d-flex flex-row justify-content-center">
+                      <div class="line-break"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row justify-content-center">
+                    <div class="card-text-content">
+                      <p class="card-text glow-text">
+                        மகதத்தின் மகத்தான வித்தகனாம் ஏகலைவன் வழி நிற்கும்
+                        அரசினர் பொறியியற் கல்லூரி,கோவை யின் கலைவித்தகற்களாம்
+                        தமிழ் மற்றும் நுண்கலை மன்ற ஏகலைவர்களின் ஓர் பெரும்
+                        பெருக்கு.தாயாகிய தமிழின் தாய்மையைப் பறைசாற்றும் வகையில்
+                        கலைகள் யாவும் புது ஒளி வீசி அரங்கேறும் மாபெரும் விழா
+                        "முத்தமிழ் விழா '23". ஒளியணைத்தும் திரிந்து வண்ணங்களைப்
+                        பரிசளிக்க, அவை நம் மனதோடு இணைந்து தவழ்ந்திடும் ஓர்
+                        வண்ணவிழாவாய் இவ்வாண்டு உருவெடுத்துள்ளது. பேச்சு , கவிதை,
+                        தனி நபர் நாடகம், தனி நபர் மௌனமொழி நாடகம் போன்ற
+                        தனித்திறமைகளை வெளிப்படுத்தும் போட்டிகளும் நாடகம்,
+                        மௌனமொழி நாடகம்,நவீன நாடகம்,தெருக்கூத்து, கிராமிய நடனம்,
+                        வில்லுப்பாட்டு,பறை, சிலம்பம், பொம்மலாட்டம், ஒளி நாடகம்
+                        ஆகிய குழு நிகழ்வுகளும் நடக்கவுள்ளன. தங்கள் திறமைகளை
+                        வெளிப்படுத்தி மேலும் மெருகேற்றிப் பயனையடையுவும்
+                        போட்டிகளில் வெற்றி கொள்பவர்களுக்குச் சான்றிதழும்
+                        பரிசுகளும் வழங்கப்படும். வேற்றுமைகள் பல இருப்பினும்
+                        தமிழால் உருவான சகோதரத்துவம் கொண்டு ஓர் குடும்பமாய்
+                        இவ்விழாவினைச் சிறப்பிக்க வாரீர்!!!
+                      </p>
+
+                      <div
+                        onclick="display('sectionEvents')"
+                        class="d-flex flex-row justify-content-center mt-4 mt-5"
+                      >
+                        <button class="group-events-button">
+                          நிகழ்வுகளுக்குச் செல்க
+                        </button>
+                      </div>
+
+                      <div class="d-flex flex-row justify-content-center">
+                        <div class="date-max-container">
+                          <div class="d-flex flex-row justify-content-left">
+                            <img
+                              class="calender-icon"
+                              src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697112735/icons8-calendar_1_ex77bm.gif"
+                            />
+                            <div class="calender-datetime d-block d-sm-none">
+                              <h1 class="calender-datetime-heading">
+                                ஐப்பசி 10,11
+                              </h1>
+                              <h2 class="calender-datetime-heading">
+                                அக்டோபர் 27 மற்றும் 28
+                              </h2>
+                            </div>
+                            <div
+                              class="calender-datetime-lap d-none d-sm-block"
+                            >
+                              <h1 class="calender-datetime-heading-lap">
+                                ஐப்பசி 10,11
+                              </h1>
+                              <h2 class="calender-datetime-heading-lap">
+                                அக்டோபர் 27 மற்றும் 28
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="countdown-timer">
+                        <style>
+                          #split {
+                            font-weight: 700;
+                            font-size: 2rem;
+                            margin: 0 5px;
+                          }
+
+                          .timeBreak {
+                            display: none;
+                          }
+
+                          .countdown-timer {
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                            margin: 20px;
+                          }
+
+                          .countdown-timer span {
+                            display: inline-block;
+                          }
+
+                          @media (max-width: 1400px) {
+                            #Timer,
+                            #Timer * {
+                              font-size: 140% !important;
+                            }
+                          }
+
+                          @media (max-width: 1300px) {
+                            #Timer,
+                            #Timer * {
+                              font-size: 120% !important;
+                            }
+                          }
+
+                          @media (max-width: 768px) {
+                            .timeBreak {
+                              display: block;
+                            }
+
+                            #split {
+                              display: none;
+                            }
+
+                            .splitColumn {
+                              flex-direction: column !important;
+                            }
+                          }
+                        </style>
+                        <span class="fw-light fs-3" id="Timer">
+                          <span class="fw-bold fs-1" id="day">&nbsp;</span
+                          >&nbsp;நாட்கள் :&nbsp;
+                          <span class="fw-bold fs-1" id="hour">&nbsp;</span
+                          >&nbsp;மணி
+                          <span id="split"> : </span>
+                          <br class="timeBreak" />
+                          &nbsp;
+                          <span class="fw-bold fs-1" id="minute">&nbsp;</span
+                          >&nbsp;நிமிடங்கள் :&nbsp;
+                          <span class="fw-bold fs-1" id="second">&nbsp;</span
+                          >&nbsp;வினாடிகள்
+                        </span>
+                        <script>
+                          function calculateTimeLeft() {
+                            const difference =
+                              new Date("2023-10-27") - new Date();
+                            let timeLeft = {};
+
+                            if (difference > 0) {
+                              timeLeft = {
+                                days: Math.floor(
+                                  difference / (1000 * 60 * 60 * 24)
+                                ),
+                                hours: Math.floor(
+                                  (difference / (1000 * 60 * 60)) % 24
+                                ),
+                                minutes: Math.floor(
+                                  (difference / (1000 * 60)) % 60
+                                ),
+                                seconds: Math.floor((difference / 1000) % 60),
+                              };
+                            } else {
+                              timeLeft = {
+                                days: 0,
+                                hours: 0,
+                                minutes: 0,
+                                seconds: 0,
+                              };
+                            }
+
+                            return timeLeft;
+                          }
+
+                          function updateTimer() {
+                            const timeLeft = calculateTimeLeft();
+                            document.getElementById("day").textContent =
+                              timeLeft.days;
+                            document.getElementById("hour").textContent =
+                              timeLeft.hours;
+                            document.getElementById("minute").textContent =
+                              timeLeft.minutes;
+                            document.getElementById("second").textContent =
+                              timeLeft.seconds;
+                          }
+
+                          function startTimer() {
+                            updateTimer();
+                            setInterval(updateTimer, 1000);
+                          }
+
+                          startTimer();
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center">
+        <video controls loop class="video-play">
+          <source
+            src="https://res.cloudinary.com/dspcvaoev/video/upload/v1697126424/mtv_video_fis2i6.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://res.cloudinary.com/dspcvaoev/video/upload/v1697126424/mtv_video_fis2i6.ogg"
+            type="video/ogg"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center mt-5 mb-5">
+        <img
+          class="mtv-poster"
+          src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697476487/Add_a_subheading_20231016_145327_0000_yqcynv.png"
+        />
+      </div>
+
+      <h5
+        style="
+          font-weight: bold;
+          font-size: 25px;
+          color: white;
+          text-align: center;
+        "
+        class="mt-4 mb-3"
+      >
+        நிகழ்வின் இடம்
+      </h5>
+
+      <div
+        class="d-flex justify-content-center align-items-center flex-column mt-4 mb-4"
+      >
+        <div class="map-content" style="width: 75%">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7832.5209893100255!2d76.9376568340073!3d11.019071817753705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858dc68b80bbf%3A0x24bab8d60d2bc693!2sGovernment%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1696263270146!5m2!1sen!2sin"
+            width="100%"
+            height="250px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="d-flex justify-content-center border-primary">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/google-maps.png"
+              alt="google-maps"
+            />
+            <div class="pl-2 pt-2 pr-2">
+              <p class="card-text-location text-left ms-3">
+                அரசினர் தொழில்நுட்பக் கல்லூரி,<br />
+                தடாகம் சாலை,<br />
+                கோயம்புத்தூர், தமிழ்நாடு - 641013,<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="follow-us-section">
+        <h1 class="follow-us-main-heading">எங்களை பின்தொடர</h1>
+        <div class="d-block d-md-none">
+          <div class="d-flex flex-row justify-content-center mt-4">
+            <img
+              class="follow-icon"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxyYWRpYWxHcmFkaWVudCBpZD0ieU9ybm5obGlDcmRTMmd5fjR0RDhtYV9YeTEwSmN1MUwyU3VfZ3IxIiBjeD0iMTkuMzgiIGN5PSI0Mi4wMzUiIHI9IjQ0Ljg5OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZkNSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjMyOCIgc3RvcC1jb2xvcj0iI2ZmNTQzZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjM0OCIgc3RvcC1jb2xvcj0iI2ZjNTI0NSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjUwNCIgc3RvcC1jb2xvcj0iI2U2NDc3MSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjY0MyIgc3RvcC1jb2xvcj0iI2Q1M2U5MSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjc2MSIgc3RvcC1jb2xvcj0iI2NjMzlhNCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjg0MSIgc3RvcC1jb2xvcj0iI2M4MzdhYiI+PC9zdG9wPjwvcmFkaWFsR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCN5T3JubmhsaUNyZFMyZ3l+NHREOG1hX1h5MTBKY3UxTDJTdV9ncjEpIiBkPSJNMzQuMDE3LDQxLjk5bC0yMCwwLjAxOWMtNC40LDAuMDA0LTguMDAzLTMuNTkyLTguMDA4LTcuOTkybC0wLjAxOS0yMAljLTAuMDA0LTQuNCwzLjU5Mi04LjAwMyw3Ljk5Mi04LjAwOGwyMC0wLjAxOWM0LjQtMC4wMDQsOC4wMDMsMy41OTIsOC4wMDgsNy45OTJsMC4wMTksMjAJQzQyLjAxNCwzOC4zODMsMzguNDE3LDQxLjk4NiwzNC4wMTcsNDEuOTl6Ij48L3BhdGg+PHJhZGlhbEdyYWRpZW50IGlkPSJ5T3JubmhsaUNyZFMyZ3l+NHREOG1iX1h5MTBKY3UxTDJTdV9ncjIiIGN4PSIxMS43ODYiIGN5PSI1LjU0IiByPSIyOS44MTMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLjY2NjMgMCAxLjg0OSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0MTY4YzkiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii45OTkiIHN0b3AtY29sb3I9IiM0MTY4YzkiIHN0b3Atb3BhY2l0eT0iMCI+PC9zdG9wPjwvcmFkaWFsR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCN5T3JubmhsaUNyZFMyZ3l+NHREOG1iX1h5MTBKY3UxTDJTdV9ncjIpIiBkPSJNMzQuMDE3LDQxLjk5bC0yMCwwLjAxOWMtNC40LDAuMDA0LTguMDAzLTMuNTkyLTguMDA4LTcuOTkybC0wLjAxOS0yMAljLTAuMDA0LTQuNCwzLjU5Mi04LjAwMyw3Ljk5Mi04LjAwOGwyMC0wLjAxOWM0LjQtMC4wMDQsOC4wMDMsMy41OTIsOC4wMDgsNy45OTJsMC4wMTksMjAJQzQyLjAxNCwzOC4zODMsMzguNDE3LDQxLjk4NiwzNC4wMTcsNDEuOTl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI0LDMxYy0zLjg1OSwwLTctMy4xNC03LTdzMy4xNDEtNyw3LTdzNywzLjE0LDcsN1MyNy44NTksMzEsMjQsMzF6IE0yNCwxOWMtMi43NTcsMC01LDIuMjQzLTUsNQlzMi4yNDMsNSw1LDVzNS0yLjI0Myw1LTVTMjYuNzU3LDE5LDI0LDE5eiI+PC9wYXRoPjxjaXJjbGUgY3g9IjMxLjUiIGN5PSIxNi41IiByPSIxLjUiIGZpbGw9IiNmZmYiPjwvY2lyY2xlPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0zMCwzN0gxOGMtMy44NTksMC03LTMuMTQtNy03VjE4YzAtMy44NiwzLjE0MS03LDctN2gxMmMzLjg1OSwwLDcsMy4xNCw3LDd2MTIJQzM3LDMzLjg2LDMzLjg1OSwzNywzMCwzN3ogTTE4LDEzYy0yLjc1NywwLTUsMi4yNDMtNSw1djEyYzAsMi43NTcsMi4yNDMsNSw1LDVoMTJjMi43NTcsMCw1LTIuMjQzLDUtNVYxOGMwLTIuNzU3LTIuMjQzLTUtNS01SDE4eiI+PC9wYXRoPgo8L3N2Zz4="
+            />
+            <a
+              class="follow-us-links"
+              href="https://www.instagram.com/tmfa_gct/"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+          <div class="d-flex flex-row justify-content-center mt-4">
+            <img
+              class="follow-icon"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiM0Y2FmNTAiIGQ9Ik00NSwxNi4ybC01LDIuNzVsLTUsNC43NUwzNSw0MGg3YzEuNjU3LDAsMy0xLjM0MywzLTNWMTYuMnoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMWU4OGU1IiBkPSJNMywxNi4ybDMuNjE0LDEuNzFMMTMsMjMuN1Y0MEg2Yy0xLjY1NywwLTMtMS4zNDMtMy0zVjE2LjJ6Ij48L3BhdGg+PHBvbHlnb24gZmlsbD0iI2U1MzkzNSIgcG9pbnRzPSIzNSwxMS4yIDI0LDE5LjQ1IDEzLDExLjIgMTIsMTcgMTMsMjMuNyAyNCwzMS45NSAzNSwyMy43IDM2LDE3Ij48L3BvbHlnb24+PHBhdGggZmlsbD0iI2M2MjgyOCIgZD0iTTMsMTIuMjk4VjE2LjJsMTAsNy41VjExLjJMOS44NzYsOC44NTlDOS4xMzIsOC4zMDEsOC4yMjgsOCw3LjI5OCw4aDBDNC45MjQsOCwzLDkuOTI0LDMsMTIuMjk4eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmYmMwMmQiIGQ9Ik00NSwxMi4yOThWMTYuMmwtMTAsNy41VjExLjJsMy4xMjQtMi4zNDFDMzguODY4LDguMzAxLDM5Ljc3Miw4LDQwLjcwMiw4aDAgQzQzLjA3Niw4LDQ1LDkuOTI0LDQ1LDEyLjI5OHoiPjwvcGF0aD4KPC9zdmc+"
+            />
+            <a class="follow-us-links" href="mailto:manavarmandramgct@gmail.com"
+              >Gmail</a
+            >
+          </div>
+          <div class="d-flex flex-row justify-content-center mt-4 pb-4">
+            <img
+              class="follow-icon"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNGRjNEMDAiIGQ9Ik00My4yLDMzLjljLTAuNCwyLjEtMi4xLDMuNy00LjIsNGMtMy4zLDAuNS04LjgsMS4xLTE1LDEuMWMtNi4xLDAtMTEuNi0wLjYtMTUtMS4xYy0yLjEtMC4zLTMuOC0xLjktNC4yLTRDNC40LDMxLjYsNCwyOC4yLDQsMjRjMC00LjIsMC40LTcuNiwwLjgtOS45YzAuNC0yLjEsMi4xLTMuNyw0LjItNEMxMi4zLDkuNiwxNy44LDksMjQsOWM2LjIsMCwxMS42LDAuNiwxNSwxLjFjMi4xLDAuMywzLjgsMS45LDQuMiw0YzAuNCwyLjMsMC45LDUuNywwLjksOS45QzQ0LDI4LjIsNDMuNiwzMS42LDQzLjIsMzMuOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjAgMzFMMjAgMTcgMzIgMjR6Ij48L3BhdGg+Cjwvc3ZnPg=="
+            />
+            <a
+              class="follow-us-links"
+              href="https://www.youtube.com/@GCTManavarMandram"
+              target="_blank"
+              >Youtube</a
+            >
+          </div>
+        </div>
+
+        <div class="d-none d-md-block pb-4">
+          <div class="d-flex flex-row justify-content-center mt-4">
+            <img
+              class="follow-icon ml-4"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxyYWRpYWxHcmFkaWVudCBpZD0ieU9ybm5obGlDcmRTMmd5fjR0RDhtYV9YeTEwSmN1MUwyU3VfZ3IxIiBjeD0iMTkuMzgiIGN5PSI0Mi4wMzUiIHI9IjQ0Ljg5OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZkNSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjMyOCIgc3RvcC1jb2xvcj0iI2ZmNTQzZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjM0OCIgc3RvcC1jb2xvcj0iI2ZjNTI0NSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjUwNCIgc3RvcC1jb2xvcj0iI2U2NDc3MSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjY0MyIgc3RvcC1jb2xvcj0iI2Q1M2U5MSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjc2MSIgc3RvcC1jb2xvcj0iI2NjMzlhNCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjg0MSIgc3RvcC1jb2xvcj0iI2M4MzdhYiI+PC9zdG9wPjwvcmFkaWFsR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCN5T3JubmhsaUNyZFMyZ3l+NHREOG1hX1h5MTBKY3UxTDJTdV9ncjEpIiBkPSJNMzQuMDE3LDQxLjk5bC0yMCwwLjAxOWMtNC40LDAuMDA0LTguMDAzLTMuNTkyLTguMDA4LTcuOTkybC0wLjAxOS0yMAljLTAuMDA0LTQuNCwzLjU5Mi04LjAwMyw3Ljk5Mi04LjAwOGwyMC0wLjAxOWM0LjQtMC4wMDQsOC4wMDMsMy41OTIsOC4wMDgsNy45OTJsMC4wMTksMjAJQzQyLjAxNCwzOC4zODMsMzguNDE3LDQxLjk4NiwzNC4wMTcsNDEuOTl6Ij48L3BhdGg+PHJhZGlhbEdyYWRpZW50IGlkPSJ5T3JubmhsaUNyZFMyZ3l+NHREOG1iX1h5MTBKY3UxTDJTdV9ncjIiIGN4PSIxMS43ODYiIGN5PSI1LjU0IiByPSIyOS44MTMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLjY2NjMgMCAxLjg0OSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0MTY4YzkiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii45OTkiIHN0b3AtY29sb3I9IiM0MTY4YzkiIHN0b3Atb3BhY2l0eT0iMCI+PC9zdG9wPjwvcmFkaWFsR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCN5T3JubmhsaUNyZFMyZ3l+NHREOG1iX1h5MTBKY3UxTDJTdV9ncjIpIiBkPSJNMzQuMDE3LDQxLjk5bC0yMCwwLjAxOWMtNC40LDAuMDA0LTguMDAzLTMuNTkyLTguMDA4LTcuOTkybC0wLjAxOS0yMAljLTAuMDA0LTQuNCwzLjU5Mi04LjAwMyw3Ljk5Mi04LjAwOGwyMC0wLjAxOWM0LjQtMC4wMDQsOC4wMDMsMy41OTIsOC4wMDgsNy45OTJsMC4wMTksMjAJQzQyLjAxNCwzOC4zODMsMzguNDE3LDQxLjk4NiwzNC4wMTcsNDEuOTl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI0LDMxYy0zLjg1OSwwLTctMy4xNC03LTdzMy4xNDEtNyw3LTdzNywzLjE0LDcsN1MyNy44NTksMzEsMjQsMzF6IE0yNCwxOWMtMi43NTcsMC01LDIuMjQzLTUsNQlzMi4yNDMsNSw1LDVzNS0yLjI0Myw1LTVTMjYuNzU3LDE5LDI0LDE5eiI+PC9wYXRoPjxjaXJjbGUgY3g9IjMxLjUiIGN5PSIxNi41IiByPSIxLjUiIGZpbGw9IiNmZmYiPjwvY2lyY2xlPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0zMCwzN0gxOGMtMy44NTksMC03LTMuMTQtNy03VjE4YzAtMy44NiwzLjE0MS03LDctN2gxMmMzLjg1OSwwLDcsMy4xNCw3LDd2MTIJQzM3LDMzLjg2LDMzLjg1OSwzNywzMCwzN3ogTTE4LDEzYy0yLjc1NywwLTUsMi4yNDMtNSw1djEyYzAsMi43NTcsMi4yNDMsNSw1LDVoMTJjMi43NTcsMCw1LTIuMjQzLDUtNVYxOGMwLTIuNzU3LTIuMjQzLTUtNS01SDE4eiI+PC9wYXRoPgo8L3N2Zz4="
+            />
+            <a
+              class="follow-us-links"
+              href="https://www.instagram.com/tmfa_gct/"
+              target="_blank"
+              >Instagram</a
+            >
+            <img
+              class="follow-icon ml-4"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiM0Y2FmNTAiIGQ9Ik00NSwxNi4ybC01LDIuNzVsLTUsNC43NUwzNSw0MGg3YzEuNjU3LDAsMy0xLjM0MywzLTNWMTYuMnoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMWU4OGU1IiBkPSJNMywxNi4ybDMuNjE0LDEuNzFMMTMsMjMuN1Y0MEg2Yy0xLjY1NywwLTMtMS4zNDMtMy0zVjE2LjJ6Ij48L3BhdGg+PHBvbHlnb24gZmlsbD0iI2U1MzkzNSIgcG9pbnRzPSIzNSwxMS4yIDI0LDE5LjQ1IDEzLDExLjIgMTIsMTcgMTMsMjMuNyAyNCwzMS45NSAzNSwyMy43IDM2LDE3Ij48L3BvbHlnb24+PHBhdGggZmlsbD0iI2M2MjgyOCIgZD0iTTMsMTIuMjk4VjE2LjJsMTAsNy41VjExLjJMOS44NzYsOC44NTlDOS4xMzIsOC4zMDEsOC4yMjgsOCw3LjI5OCw4aDBDNC45MjQsOCwzLDkuOTI0LDMsMTIuMjk4eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmYmMwMmQiIGQ9Ik00NSwxMi4yOThWMTYuMmwtMTAsNy41VjExLjJsMy4xMjQtMi4zNDFDMzguODY4LDguMzAxLDM5Ljc3Miw4LDQwLjcwMiw4aDAgQzQzLjA3Niw4LDQ1LDkuOTI0LDQ1LDEyLjI5OHoiPjwvcGF0aD4KPC9zdmc+"
+            />
+            <a class="follow-us-links" href="mailto:manavarmandramgct@gmail.com"
+              >Gmail</a
+            >
+            <img
+              class="follow-icon ml-4"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNGRjNEMDAiIGQ9Ik00My4yLDMzLjljLTAuNCwyLjEtMi4xLDMuNy00LjIsNGMtMy4zLDAuNS04LjgsMS4xLTE1LDEuMWMtNi4xLDAtMTEuNi0wLjYtMTUtMS4xYy0yLjEtMC4zLTMuOC0xLjktNC4yLTRDNC40LDMxLjYsNCwyOC4yLDQsMjRjMC00LjIsMC40LTcuNiwwLjgtOS45YzAuNC0yLjEsMi4xLTMuNyw0LjItNEMxMi4zLDkuNiwxNy44LDksMjQsOWM2LjIsMCwxMS42LDAuNiwxNSwxLjFjMi4xLDAuMywzLjgsMS45LDQuMiw0YzAuNCwyLjMsMC45LDUuNywwLjksOS45QzQ0LDI4LjIsNDMuNiwzMS42LDQzLjIsMzMuOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjAgMzFMMjAgMTcgMzIgMjR6Ij48L3BhdGg+Cjwvc3ZnPg=="
+            />
+            <a
+              class="follow-us-links"
+              href="https://www.youtube.com/@GCTManavarMandram"
+              target="_blank"
+              >Youtube</a
+            >
+          </div>
+        </div>
+
+        <div class="d-block d-md-none">
+          <div class="end-align-container">
+            <div class="d-flex justify-content-center">
+              <div class="d-flex flex-row justify-content-left align-logo">
+                <img
+                  class="logo-images-end-mobile pr-2"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697262463/Gmail_icon__2020_.svg_weofzn.png"
+                />
+                <p class="logo-text-end-mobile">manavarmandramgct@gmail.com</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-around">
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end-mobile pl-2 pr-2"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697264137/instagram_u1mkpg.png"
+                />
+                <p class="logo-text-end-mobile">@tmfa_gct</p>
+              </div>
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end-mobile pl-2 pr-2"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697264123/youtube_w0lfqu.png"
+                />
+                <p class="logo-text-end-mobile">GCTManavarMandram</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-around pb-3">
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end-mobile"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697477647/kqw7gj8ggkm2i8kz2xg6.png"
+                />
+                <a href="tel:+917603896604" class="logo-text-end-mobile"
+                  >Natheesh - 7603896604</a
+                >
+              </div>
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end-mobile"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697477647/kqw7gj8ggkm2i8kz2xg6.png"
+                />
+                <a href="tel:+918754621504" class="logo-text-end-mobile"
+                  >Nithesh - 8754621504</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-md-block">
+          <div class="end-align-container mt-1">
+            <div class="d-flex justify-content-around">
+              <div class="d-flex flex-row justify-content-left align-logo">
+                <img
+                  class="logo-images-end pr-2"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697262463/Gmail_icon__2020_.svg_weofzn.png"
+                />
+                <p class="logo-text-end">manavarmandramgct@gmail.com</p>
+              </div>
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end pl-2 pr-2"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697264137/instagram_u1mkpg.png"
+                />
+                <p class="logo-text-end">@tmfa_gct</p>
+              </div>
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end pl-2 pr-2"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697264123/youtube_w0lfqu.png"
+                />
+                <p class="logo-text-end">GCTManavarMandram</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-around pb-3">
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end-mobile"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697477647/kqw7gj8ggkm2i8kz2xg6.png"
+                />
+                <a href="tel:+917603896604" class="logo-text-end"
+                  >Natheesh - 7603896604</a
+                >
+              </div>
+              <div class="d-flex flex-row justify-content-left">
+                <img
+                  class="logo-images-end-mobile"
+                  src="https://res.cloudinary.com/dspcvaoev/image/upload/v1697477647/kqw7gj8ggkm2i8kz2xg6.png"
+                />
+                <a href="tel:+918754621504" class="logo-text-end"
+                  >Nithesh - 8754621504</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sectionEvents">
+      <style>
+        .blurthis {
+          backdrop-filter: blur(16px) saturate(180%);
+          -webkit-backdrop-filter: blur(16px) saturate(180%);
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+      </style>
+      <div
+        class="Event-Registration container-fluid d-flex justify-content-center align-items-center flex-column"
+        data-bs-theme="light"
+      >
+        <div
+          class="container-fluid text-center d-flex justify-content-center align-items-center flex-column"
+        >
+          <h2 class="my-5 main-heading">குழு நிகழ்வுகள்</h2>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
+            <div class="col d-flex justify-content-center mb-3">
+              <div
+                class="border-dark rounded text-center blurthis"
+                style="width: 100%"
+              >
+                <img
+                  src="https://www.deccanchronicle.com/_next/image?url=http%3A%2F%2Fimages.deccanchronicle.com%2Fdc-Cover-o6peov88vmchmno1a3nh8f0693-20161203232050.Medi.jpeg&w=1920&q=75"
+                  class="card-img-top"
+                  alt="..."
+                  width="100%"
+                  height="225"
+                  preserve-aspect-ratio="xMidYMid slice"
+                  style="object-fit: cover"
+                />
+                <div class="card-body p-3">
+                  <h5 class="card-title">குழு மௌன நாடகம்</h5>
+                  <p class="card-text">
+                    வார்த்தைகள் இல்லாமல், வசனங்கள் பேசாமல், ஒலிகள் எழுப்பாமல்,
+                    வண்ணமயமான வாழ்க்கையை, மௌனம் எனும் தூரிகைக் கொண்டு
+                    வரைந்திடுவீர். நவரசத்தினை கண்களிலும் உவமைகளை உதடுகளிலும்
+                    கருத்துகளை கை கால் அசைவுகளிலும் வெளிப்படுத்த வாரீர்
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-3">
+              <div
+                class="border-dark rounded text-center blurthis"
+                style="width: 100%"
+              >
+                <img
+                  src="https://mc.webpcache.epapr.in/mcms.php?size=large&in=https://mcmscache.epapr.in/post_images/website_212/post_29418906/full.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  width="100%"
+                  height="225"
+                  preserve-aspect-ratio="xMidYMid slice"
+                  style="object-fit: cover; object-position: top center"
+                />
+                <div class="card-body p-3">
+                  <h5 class="card-title">கிராமிய நடனம்</h5>
+                  <p class="card-text">
+                    மானிடராய் பிறந்த செம்மையான மண்ணின் மாண்புமிகு கலைகளைக்
+                    கற்றுத் தேர்ந்து, காண்போரின் கண்களில் உற்சாக வெள்ளம்
+                    பெருக்கெடுத்து, மழைநேரத்து மயில்கள் வானவில்லாக உருவெடுத்து
+                    இதுவல்லவோ எம் மண்ணின் பாரம்பரியம் என தன் எழிலால் வியப்பில்
+                    ஆழ்த்திடும் ஓர் ஆட்டம்
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-3">
+              <div
+                class="border-dark rounded text-center blurthis"
+                style="width: 100%"
+              >
+                <img
+                  src="https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-1qanrtusc730k9ugpsbrqo8cl7-20190812234852.Medi.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                  width="100%"
+                  height="225"
+                  preserve-aspect-ratio="xMidYMid slice"
+                  style="object-fit: cover; object-position: top center"
+                />
+                <div class="card-body p-3">
+                  <h5 class="card-title">தெருக்கூத்து</h5>
+                  <p class="card-text">
+                    கூத்து எனும் வாளிக்குள் செய்தி எனும் சாயத்தை ஊற்றி
+                    வெளுத்துப்போன மக்களின் மனதில் வண்ணச்சாயத்தை பூசி பாமர மக்கள்
+                    மனதில் வண்ணமயமான செய்திகளைப் புகுத்தி பாரெங்கும் ஒலித்து
+                    நற்கருத்துக்களை மக்கள் மனதில் விதைத்திடுவோம்!!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-center mb-3">
+              <div
+                class="border-dark rounded text-center blurthis"
+                style="width: 100%"
+              >
+                <img
+                  src="https://www.indica.today/wp-content/uploads/2022/12/FI-for-Villupattu-article-700x394.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  width="100%"
+                  height="225"
+                  preserve-aspect-ratio="xMidYMid slice"
+                  style="object-fit: cover"
+                />
+                <div class="card-body p-3">
+                  <h5 class="card-title">வில்லுப்பாட்டு</h5>
+                  <p class="card-text">
+                    இறைவனை இசைக்க வில்லெடுத்து, வண்ணத்தூரிகைகளால் வார்த்தைகளைக்
+                    கோர்த்து, நயனத்தின் இசையால் மிளிர வைத்து, கடம் போல் வடம்
+                    கட்டி, கஞ்சிரத்தின் நவீன ஓசையால் புத்தம் புது கருத்துக்களைக்
+                    கொண்டு மாற்றுவோம் இவ்வுலகையே
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row justify-content-center mt-4 mt-5">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSexXUVDWituLMbkSrbeiUtWmjgDD3j3PlfGqxdBGUhtQx769Q/viewform"
+              target="_blank"
+              class="group-events-button"
+              >இங்கே பதிவு செய்யுங்கள்</a
+            >
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="container-fluid text-center d-flex justify-content-center align-items-center flex-column"
+        >
+          <h2 class="my-5 main-heading">தனிநபர் நிகழ்வுகள்</h2>
+
+          <style>
+            .solo-events .col {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          </style>
+          <div class="container solo-events-heading">
+            <div
+              class="row row-cols-1 row-cols-md-4 row-cols-lg-5 justify-content-center solo-events"
+            >
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                தனிநபர் நாடகம்
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                தனிநபர் மெளன மொழி நாடகம்
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                தமிழ் வினாடி வினா
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                திரைப்பட வினாடி வினா
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                விளையாட்டு வினாடி வினா
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                கலக்கப் போவது யாரு
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                சகலகலா வல்லவன்
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                கவிதை
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                பேச்சுப் போட்டி
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Hand Painting
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Solo Singing
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Paper Dressing
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Pebble Art
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                No Glue! No Tape!
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Shades of Grey
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Caricature Chronicles
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Solo Dance
+              </div>
+              <div
+                class="rounded m-1 col border-dark blurthis"
+                style="height: 50px"
+              >
+                Dumb - C
+              </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center mt-4 mt-5">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSexXUVDWituLMbkSrbeiUtWmjgDD3j3PlfGqxdBGUhtQx769Q/viewform"
+                target="_blank"
+                class="group-events-button"
+                >இங்கே பதிவு செய்யுங்கள்</a
+              >
+            </div>
+
+            <h2 class="my-5 main-heading">விதிமுறைகள்</h2>
+
+            <div class="d-flex flex-row justify-content-centermt-4">
+              <div class="rules-container">
+                <ol class="rounded m-1 col border-dark blurthis">
+                  <ul class="card-text-rules glow-text bulletin-rules mt-4">
+                    <li class="glow-text pt-3">
+                      பங்கேற்பாளர்கள் அனைவரும் தங்களின் கல்லூரி அடையாள அட்டையைக்
+                      கொண்டு வருதல் அவசியம்.
+                    </li>
+                    <li class="glow-text pt-3">
+                      போட்டியில் பங்கேற்கும் மாணவர்கள் குறித்த நேரத்திற்கு
+                      முன்பே தங்களின் பெயரையோ அல்லது அணியின் பெயரையோ பதிவு
+                      செய்திருத்தல் அவசியம்.
+                    </li>
+                    <li class="glow-text pt-3">
+                      ஒன்றுக்கு மேற்பட்டபோட்டிகளில் பங்கேற்க விரும்பும்
+                      போட்டியாளர்கள் நேர மேலாண்மையைத் தங்களுக்குத் தகுந்தவாறு
+                      பயன்படுத்திக்கொள் வேண்டும்.
+                    </li>
+                    <li class="glow-text pt-3">
+                      கல்லூரி மற்றும் விடுதிக்குள் குறிப்பிட்ட விதிமுறைகளுக்கு
+                      உட்பட்டு நடக்காத பட்சத்தில் கல்லூரி எடுக்கின்ற அனைத்து
+                      நடவடிக்கைகளுக்கும் கட்டுப்பட்டு நடக்கவேண்டும்.
+                    </li>
+                    <li class="glow-text pt-3">
+                      அவைக்குப் பொருந்தாத செயல்களைச் செய்தல் முற்றிலுமாகத்
+                      தவிர்க்கப்பட வேண்டும்.
+                    </li>
+                    <li class="glow-text pt-3">
+                      அனைத்துப்போட்டிகளிலும் நடுவரின் தீர்ப்பே இறுதியானது.
+                    </li>
+                    <li class="glow-text pt-3">
+                      சூழ்நிலைகளுக்குத் தகுந்தாற்போல் போட்டிகளின் நேரம்
+                      மாற்றப்படலாம்.
+                    </li>
+                    <li class="glow-text pt-3">
+                      போட்டியாளர்களின் உடைமைகளுக்கு, கல்லூரிநிர்வாகம்
+                      பொறுப்பேற்காது.
+                    </li>
+                    <li class="glow-text pt-3 pb-3">
+                      போட்டியில் கலந்துகொள்ள பங்கேற்பாளர் அடையாள அட்டை அவசியம்.
+                    </li>
+                  </ul>
+                  <div class="pt-5 pb-5">
+                    <a
+                      href="https://drive.google.com/file/d/1rJ-YPu8OigBve9OGChq4vuVdT0ia__1o/view?usp=drivesdk"
+                      target="_blank"
+                      class="group-events-button"
+                      >விதிமுறைகளைப் படிக்கவும்</a
+                    >
+                  </div>
+                </ol>
+              </div>
+            </div>
+
+            <div class="d-sm-block">
+              <button
+                onclick="display('sectionMainPage')"
+                class="back-fixed-button"
+              >
+                பின்செல்க
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="up-arrow">
+        <div class="d-flex flex-column my-5">
+          <a href="#" class="to-top"></a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
+  </body>
+</html>
