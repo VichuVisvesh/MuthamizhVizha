@@ -35,6 +35,7 @@ html {
   width: 100vw;
 }
 
+
 .mtv-logo {
   width: 50vw;
   opacity: 0;
@@ -42,11 +43,28 @@ html {
   /* Use CSS animation with 1s duration and a 1s delay */
 }
 
+@media (min-width:750px){
+  .mtv-logo{
+    width: 30vw;
+    opacity: 0;
+    animation: fadeIn 1s 1s forwards;
+  }
+}
+
 .mtv-logo-text {
   width: 80vw;
   opacity: 0;
-  animation: fadeIn 1s 1.5s forwards;
+  animation: fadeIn 1s 2s forwards;
   /* Use CSS animation with 1s duration and a 2s delay */
+}
+
+
+@media (min-width:750px){
+  .mtv-logo-text{
+    width: 50vw;
+    opacity: 0;
+    animation: fadeIn 1s 2s forwards;
+  }
 }
 
 @keyframes fadeIn {
